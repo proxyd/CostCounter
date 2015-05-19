@@ -32,7 +32,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         arr.forEach(function (item) {
             var startDate = new Date(item.startDate);
             var endDate = new Date(item.endDate);
-            if (today >= startDate && today <= endDate) {
+            if (today.getTime() >= startDate.getTime() && today.getTime() <= endDate.getTime()) {
                 result = item.tariffs;
                 alert("---");
                 alert(arr[0].tariffs[0].price);
