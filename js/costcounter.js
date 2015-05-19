@@ -42,7 +42,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
             if (amount > item.limit) {
                 cost += (amount - item.limit) * item.price;
                 amount = item.limit;
-                alert(item.limit);
+                alert(cost);
             }
         });
         return cost.toFixed(2);
