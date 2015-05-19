@@ -42,11 +42,12 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
             if (amount > item.limit) {
                 cost += (amount - item.limit) * item.price;
                 amount = item.limit;
+                alert(item.limit);
             }
         });
         return cost.toFixed(2);
     })(tariffs, amount);
-    alert(tariffs);
+    
     var costSuffix = $('#' + id + ' h1 small');
     costSuffix.detach();
     $('#' + id + ' h1').text(cost + ' ').append(costSuffix);
