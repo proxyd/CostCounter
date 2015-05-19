@@ -46,7 +46,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         });
         return cost.toFixed(2);
     })(tariffs, amount);
-    alert(cost);
+    alert(tariffs);
     var costSuffix = $('#' + id + ' h1 small');
     costSuffix.detach();
     $('#' + id + ' h1').text(cost + ' ').append(costSuffix);
