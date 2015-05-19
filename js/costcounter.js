@@ -28,6 +28,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
     var tariffs = (function (arr) {
         var today = new Date();
         var result = [];
+        alert(arr[0].tariffs[0].price);
         arr.forEach(function (item) {
             var startDate = new Date(item.startDate);
             var endDate = new Date(item.endDate);
