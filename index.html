@@ -1,1 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
+    <title>CostCounter</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sx-12 col-sm-6 col-sm-offset-3">
+            <h2>Расчет стоимости</h2>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" style="padding-bottom: 0">
+                    <ul class="nav nav-tabs" role="tablist" style="border-bottom: none">
+                        <li class="active" role="presentation">
+                            <a href="#power" aria-controls="power" data-toggle="tab">Свет</a>
+                        </li>
+                        <li role="presentation"><a href="#gas" aria-controls="gas" data-toggle="tab">Газ</a></li>
+                        <li role="presentation"><a href="#water" aria-controls="water" data-toggle="tab">Вода</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="power">
+                            <h1 class="text-center">0.00 <small>грн.</small></h1>
+                            <h2 class="text-center">0 <small>кВт.</small></h2>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="gas">
+                            <h1 class="text-center">0.00 <small>грн.</small></h1>
+                            <h2 class="text-center">0 <small>м<sup>3</sup>.</small></h2>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="water">
+                            <h1 class="text-center">0.00 <small>грн.</small></h1>
+                            <h2 class="text-center">0 <small>м<sup>3</sup>.</small></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <h3>Показания счетчика</h3>
+
+                    <form action="" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control" id="nextCount" maxlength="6" value="0">
+                                <span class="help-block">текущие</span>
+                            </div>
+                            <div class="col-xs-6">
+                                <input type="text" class="form-control" id="prevCount" maxlength="6" value="0">
+                                <span class="help-block">предыдущие</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/costcounter.js"></script>
+</body>
+</html>
