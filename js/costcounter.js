@@ -12,8 +12,8 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 });
 
 $('input, a[data-toggle="tab"]').on("keyup click change", function () {
-    var next = parseInt($("#nextCount").val()) || 0;
-    var prev = parseInt($("#prevCount").val()) || 0;
+    var next = parseInt($("#nextCount").val(), 10) || 0;
+    var prev = parseInt($("#prevCount").val(), 10) || 0;
     var id = $(".active > a").attr("aria-controls");
 
     storage[id] = [next, prev];
