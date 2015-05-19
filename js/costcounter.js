@@ -28,11 +28,10 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
     var tariffs = (function (arr) {
         var today = new Date();
         var result = [];
-        
+        alert(Date.parse("01.05.2015"));
         arr.forEach(function (item) {
             var startDate = new Date(item.startDate);
             var endDate = new Date(item.endDate);
-            alert(endDate);
             if (today >= startDate && today <= endDate) {
                 result = item.tariffs;
             }
