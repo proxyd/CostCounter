@@ -27,11 +27,11 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
 
     var tariffs = (function (arr) {
         var today = new Date();
-        alert(today);
         var result = [];
         arr.forEach(function (item) {
             if (today >= new Date(item.startDate) && today <= new Date(item.endDate)) {
                 result = item.tariffs;
+                alert(today);
             }
         });
         return result;
