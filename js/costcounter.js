@@ -49,7 +49,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
 
     var costSuffix = $('#' + id + ' h1 small');
     costSuffix.detach();
-    $('#' + id + ' h1').text(cost).append(costSuffix);
+    $('#' + id + ' h1').text(cost + ' ').append(costSuffix);
 
     var amountSuffix = $('#' + id + ' h2 small');
     amountSuffix.detach();
