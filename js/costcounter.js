@@ -29,18 +29,16 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         var today = new Date();
         var result = [];
         arr.forEach(function (item) {
-            var startDate = new Date(item.startDate);
-            var endDate = new Date(item.endDate);
-            if (today >= startDate && today <= endDate) {
+            if (today >= new Date(item.startDate) && today <= new Date(item.endDate)) {
                 result = item.tariffs;
             }
         });
         return result;
     })(config[id]);
 
-    var cost = (function (t, amount) {
+    var cost = (function (tariffs, amount) {
         var cost = 0;
-        t.forEach(function (item) {
+        tariffs.forEach(function (item) {
             if (amount > item.limit) {
                 cost += (amount - item.limit) * item.price;
                 amount = item.limit;
