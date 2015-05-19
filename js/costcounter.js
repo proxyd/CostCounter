@@ -26,13 +26,13 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
     })();
 
     var tariffs = (function (arr) {
-        var today = new Date();
+        var today = new Date().getTime();
         var result = [];
         
         arr.forEach(function (item) {
-            var startDate = new Date(item.startDate);
-            var endDate = new Date(item.endDate);
-            if (today.getTime() >= startDate.getTime() && today.getTime() <= endDate.getTime()) {
+            var startDate = new Date(item.startDate).getTime();
+            var endDate = new Date(item.endDate).getTime();
+            if (today >= startDate && today <= endDate) {
                 result = item.tariffs;
                 alert("---");
                 alert(arr[0].tariffs[0].price);
