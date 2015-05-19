@@ -26,12 +26,12 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
     })();
 
     var tariffs = (function (arr) {
-        var today = new Date().getTime();
+        var today = +new Date();
         var result = [];
         
         arr.forEach(function (item) {
-            var startDate = new Date(item.startDate).getTime();
-            var endDate = new Date(item.endDate).getTime();
+            var startDate = +new Date(item.startDate);
+            var endDate = +new Date(item.endDate);
             if (today >= startDate && today <= endDate) {
                 result = item.tariffs;
             }
