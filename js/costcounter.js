@@ -31,6 +31,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         arr.forEach(function (item) {
             if (today >= new Date(item.startDate) && today <= new Date(item.endDate)) {
                 result = item.tariffs;
+                alert(item.tariffs);
             }
         });
         return result;
