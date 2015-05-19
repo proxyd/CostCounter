@@ -29,7 +29,9 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         var today = new Date();
         var result = [];
         arr.forEach(function (item) {
-            if (today >= new Date(item.startDate) && today <= new Date(item.endDate)) {
+            var startDate = new Date(item.startDate);
+            var endDate = new Date(item.endDate);
+            if (today >= startDate && today <= endDate) {
                 result = item.tariffs;
                 alert(today);
             }
