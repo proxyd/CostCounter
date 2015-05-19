@@ -34,8 +34,6 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
             var endDate = new Date(item.endDate).getTime();
             if (today >= startDate && today <= endDate) {
                 result = item.tariffs;
-                alert("---");
-                alert(arr[0].tariffs[0].price);
             }
         });
         return result;
