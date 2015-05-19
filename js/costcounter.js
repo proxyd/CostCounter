@@ -29,6 +29,9 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         var today = new Date();
         var result = [];
         alert(new Date(Date.parse("01/05/2015")));
+        alert(new Date(Date.parse("01.05.2015")));
+        alert(new Date(Date.parse("01-05-2015")));
+        alert(new Date(Date.parse("2015-05-01")));
         arr.forEach(function (item) {
             var startDate = new Date(item.startDate);
             var endDate = new Date(item.endDate);
