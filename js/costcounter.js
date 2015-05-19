@@ -36,13 +36,12 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
         return result;
     })(config[id]);
 
-    var cost = (function (tariffs, amount) {
+    var cost = (function (t, amount) {
         var cost = 0;
-        tariffs.forEach(function (item) {
+        t.forEach(function (item) {
             if (amount > item.limit) {
                 cost += (amount - item.limit) * item.price;
                 amount = item.limit;
-                alert(item.price);
             }
         });
         return cost.toFixed(2);
