@@ -35,7 +35,7 @@ $('input, a[data-toggle="tab"]').on("keyup click change", function () {
                 result = item.tariffs;
             }
         });
-        alert(result);
+        alert("res");
         return result;
     })(config[id]);
 
