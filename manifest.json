@@ -6,18 +6,8 @@
   "display": "standalone",
   "theme_color": "#fff",
   "background_color": "#4b0082",
-  "icons": [
-    { 
-      "src": "baseline-flash_on-24px.svg",
-      "sizes": "48x48"
-    },
-    {
-      "src": "baseline_flash_on_black_48dp.png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "baseline_flash_on_black_96dp.png",
-      "sizes": "96x96"
-    }
-  ]
+  "icons": [{
+    "src": "baseline_flash_on_gold_96dp.png",
+    "sizes": "96x96"
+  }]
 }
