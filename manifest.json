@@ -8,7 +8,7 @@
   "display": "standalone",
   "icons": [
     { 
-      "src": "/baseline-flash_on-24px.svg",
+      "src": "/costcounter/baseline-flash_on-24px.svg",
       "sizes": "48x48"
     }
   ]
