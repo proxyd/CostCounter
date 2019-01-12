@@ -8,8 +8,16 @@
   "display": "standalone",
   "icons": [
     { 
-      "src": "/costcounter/baseline-flash_on-24px.svg",
+      "src": "baseline-flash_on-24px.svg",
       "sizes": "48x48"
+    },
+    {
+      "src": "baseline_flash_on_black_48dp.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "baseline_flash_on_black_96dp.png",
+      "sizes": "96x96"
     }
   ]
 }
