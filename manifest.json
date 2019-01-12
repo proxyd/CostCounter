@@ -8,7 +8,7 @@
   "display": "standalone",
   "icons": [
     { 
-      "src": "https://material.io/tools/icons/static/icons/baseline-flash_on-24px.svg",
+      "src": "/baseline-flash_on-24px.svg",
       "sizes": "48x48"
     }
   ]
