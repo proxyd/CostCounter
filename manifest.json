@@ -3,9 +3,9 @@
   "short_name": "CostCounter",
   "description": "Расчет стоимости электроэнергии, газа и воды для населения Украины",
   "start_url": "./?utm_source=web-app-manifest",
-  "theme_color": "#ffff00",
-  "background_color": "#fff",
   "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#4b0082",
   "icons": [
     { 
       "src": "baseline-flash_on-24px.svg",
